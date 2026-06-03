@@ -1,0 +1,21 @@
+name: ScreenshotTranslator
+options:
+  bundleIdPrefix: com.artkd
+targets:
+  ScreenshotTranslator:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: ScreenshotTranslator
+    settings:
+      CODE_SIGNING_ALLOWED: "NO"
+      CODE_SIGNING_REQUIRED: "NO"
+      CODE_SIGN_IDENTITY: ""
+      DEVELOPMENT_TEAM: ""
+      PROVISIONING_PROFILE_SPECIFIER: ""
+      COMPILER_INDEX_STORE_ENABLE: "NO"
+      INFOPLIST_FILE: ScreenshotTranslator/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: com.artkd.ScreenshotTranslator
+      MARKETING_VERSION: "1.0.0"
+      CURRENT_PROJECT_VERSION: "1"
