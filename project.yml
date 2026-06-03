@@ -1,6 +1,8 @@
 name: ScreenshotTranslator
 options:
   bundleIdPrefix: com.artkd
+  xcodeVersion: "15.4"
+  projectFormat: xcode15_3
 targets:
   ScreenshotTranslator:
     type: application
