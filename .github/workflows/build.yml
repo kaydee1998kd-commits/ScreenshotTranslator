@@ -27,13 +27,14 @@ jobs:
           xcodebuild -project ScreenshotTranslator.xcodeproj \
             -scheme ScreenshotTranslator \
             -configuration Release \
-            -sdk iphoneos \
+            -destination "generic/platform=iOS" \
             -derivedDataPath build \
             build \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
-            PROVISIONING_PROFILE_SPECIFIER=""
+            PROVISIONING_PROFILE_SPECIFIER="" \
+            DEVELOPMENT_TEAM=""
 
       - name: Package IPA
         run: |
