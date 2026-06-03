@@ -241,8 +241,7 @@ struct ContentView: View {
                     Image(systemName: "photo.badge.plus")
                     Text("Choose Photo...")
                 }
-                .font(.subheadline)
-                .bold()
+                .font(.subheadline.weight(.bold))
                 .foregroundColor(.white)
                 .padding(.horizontal, 24)
                 .padding(.vertical, 10)
@@ -257,7 +256,7 @@ struct ContentView: View {
         .shadow(color: Color.black.opacity(0.02), radius: 3, x: 0, y: 1)
     }
     
-    private func recentScreenshotBanner(for asset: PHAsset) -> View {
+    private func recentScreenshotBanner(for asset: PHAsset) -> some View {
         VStack(spacing: 12) {
             HStack(spacing: 12) {
                 PHAssetThumbnailView(asset: asset, manager: photoManager)
@@ -296,8 +295,7 @@ struct ContentView: View {
                     Image(systemName: "translate")
                     Text("Translate Immediately")
                 }
-                .font(.subheadline)
-                .bold()
+                .font(.subheadline.weight(.bold))
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 8)

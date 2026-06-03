@@ -185,8 +185,7 @@ struct TranslationView: View {
             VStack(spacing: 12) {
                 HStack {
                     Toggle("Show Translations", isOn: $showOverlays)
-                        .font(.subheadline)
-                        .bold()
+                        .font(.subheadline.weight(.bold))
                     
                     Spacer()
                 }
@@ -287,7 +286,7 @@ struct TranslationView: View {
         }
     }
     
-    private func errorView(error: String) -> View {
+    private func errorView(error: String) -> some View {
         VStack(spacing: 20) {
             Image(systemName: "exclamationmark.triangle.fill")
                 .font(.system(size: 48))
@@ -328,8 +327,7 @@ struct TranslationView: View {
                     Image(systemName: "square.and.arrow.up")
                     Text("Share Image")
                 }
-                .font(.subheadline)
-                .bold()
+                .font(.subheadline.weight(.bold))
                 .foregroundColor(.primary)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 12)
@@ -343,8 +341,7 @@ struct TranslationView: View {
                     Image(systemName: "arrow.down.to.line")
                     Text("Save to Photos")
                 }
-                .font(.subheadline)
-                .bold()
+                .font(.subheadline.weight(.bold))
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 12)
